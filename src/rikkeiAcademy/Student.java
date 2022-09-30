@@ -3,10 +3,18 @@ package rikkeiAcademy;
 public class Student {
     private int studentID;
     private String name;
-    private static String university = "University of Languages & International Studies";
+    private static String university = "BBDIT" ;
 
-    public Student() {
-        studentID = 18041298;
-        name = "Nguyen Minh Thoa";
+    Student(int r, String n) {
+        studentID = r;
+        name = n;
+    }
+
+    static void change() {
+        university = "University of Languages & International Studies";
+    }
+
+    void display(){
+        System.out.println(studentID + " " + name + " "+ university);
     }
 }
